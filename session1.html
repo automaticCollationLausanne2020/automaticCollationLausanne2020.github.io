@@ -1,17 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<meta charset="utf-8" />
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
 		<title>Exploring your computer</title>
 
-		<link rel="stylesheet" href="css/reset.css"/>
-		<link rel="stylesheet" href="css/reveal.css"/>
-		<link rel="stylesheet" href="css/theme/black.css"/>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/reveal.css" />
+		<link rel="stylesheet" href="css/theme/solarized.css" />
 
 		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css"/>
+		<link rel="stylesheet" href="lib/css/monokai.css" />
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -21,17 +22,351 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+		<style>
+			.mono {
+			    font-family: monospace;
+			    font-weight: bold}
+			.bigImg {
+			    max-width: 60%;
+			}</style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
 				<section>
-				    <h2>in progress</h2>
+					<h1>Explore your computer</h1>
+				</section>
+				<section>
+					<h2>Goals</h2>
+					<ul>
+						<li>Learn the different types of files</li>
+						<li>Browse the file system</li>
+						<li>Create/delete/move folders and files from the command line</li>
+					</ul>
+				</section>
+				<section>
+					<section>
+						<h1>Files, formats and character encoding</h1>
+					</section>
+					<section>
+						<h2>File types</h2>
+						<ul>
+							<li><strong>executable files</strong>: they contain programs</li>
+							<li><strong>data files</strong>: they contain different types of
+								information: text, image, audio, video.</li>
+						</ul>
+					</section>
+					<section>
+						<h2>File types (another taxonomy)</h2>
+						<ul>
+							<li><strong>text files</strong>: data is stored using electronic text (characters). They are human-readable.</li>
+							<li><strong>binary files</strong>: data is stored in binary format. They are computer-readable but not human-readable.</li>
+						</ul>
+					</section>
+					<section>
+						<img src="img/punch-card.jpg" alt="punched card file" class="bigImg"
+							style="max-width:60%" />
+					</section>
+					<section>
+						<figure><img src="img/punch-card.jpg" alt="punched card file" class="bigImg"
+								style="max-width:55%" />
+							<figcaption><a
+									href="https://commons.wikimedia.org/wiki/File:PunchCardDecks.agr.jpg"
+									target="_blank">Punched card file</a> by
+								ArnoldReinhold</figcaption></figure>
+					</section>
+					<section>
+						<h2>Formats</h2>
+						<ul>
+							<li>The file extension can be used as a hint to the format</li>
+							<li>The format tells us the specific software we need to read it and/or
+								manipulate it (e.g. data files) or run it (i.e. executable
+								files)</li>
+						</ul>
+					</section>
+					<!--<section>
+						<figure><img src="img/file_extensions.png" alt="xkcd file extensions" />
+							<figcaption><a href="https://xkcd.com/1301/" target="_blank">File
+									extensions</a> by xkcd</figcaption></figure>
+					</section>-->
+					<section>
+						<h2>Character encoding</h2>
+						<ul>
+							<li>Any “text” is created from <strong>characters</strong>.</li>
+							<li>Characters that are needed for a specific purpose are grouped into a
+									<strong>character set</strong>.</li>
+							<li>To refer to a character in an unambiguous way, each character is
+								associated to a <strong>code point</strong> (a number).</li>
+							<li>Characteres are stored in the computers as one of more
+									<strong>bytes</strong>.</li>
+							<li>A <strong>character encoding</strong> is a set of mappings between
+								the bytes and the character set.</li>
+						</ul>
+					</section>
+					<section>
+						<h2>What character encoding?</h2>
+						<h3>UTF-8</h3>
+					</section>
+					<section>
+						<h2>Things to consider</h2>
+						<ul>
+							<li>Your machine might be using another encoding by default (eg.
+								Windows-1252 or CP-1252)</li>
+						</ul>
+					</section>
+					<!--<section>
+						<figure>
+							<img src="img/encoding.png" alt="xkcd encoding" />
+							<figcaption><a href="https://xkcd.com/1209/" target="_blank"
+									>Encoding</a> by xkcd</figcaption>
+						</figure>
+					</section>-->
+					<section>
+						<h2>In this course we will work with:</h2>
+						<ul>
+							<li><span class="mono">.txt</span> plain text</li>
+							<li><span class="mono">.csv</span> tabular plain text (comma-separated
+								values)</li>
+							<li><span class="mono">.py</span> source code in the script language
+								Python</li>
+							<li><span class="mono">.ipynb</span> notebook documents used by Jupyter
+								Notebook, interactive computational environment to work with Python</li>
+						</ul>
+					</section></section>
+				<section>
+					<section>
+						<h1>The file system</h1>
+					</section>
+					<section>
+						<h2>The terminal</h2>
+						<ul>
+							<li>Also known as console, command-line interface</li>
+							<li>It processes commands to a computer program in the form of lines of
+								text</li>
+						</ul>
+					</section>
+					<section>
+						<h2>To open the terminal</h2>
+						<ul>
+							<li>Linux: press <span class="mono">CTRL + ALT + T</span></li>
+							<li>Windows: press <span class="mono">Windows + X</span>; select <span
+									class="mono">Windows PowerShell</span> or open the start menu
+								and type “Powershell”</li>
+							<li>Mac: in the Finder, open <span class="mono"
+									>/Applications/Utilities</span> (or use Launchpad and type
+								“Terminal”)</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Command</h2>
+						<p style="text-align:left">It is a request the user sends to the OS for it
+							to execute it. Elements:</p>
+						<ol>
+							<li>Name of a executable program (e.g. <span class="mono"
+								>python</span>)</li>
+							<li>A set of options whose name is preceded by one or two hyphens (e.g.
+									<span class="mono">-i</span> or <span class="mono"
+								>--help</span>)</li>
+							<li>A set of arguments to define the file(s) or the data that must be
+								used</li>
+						</ol>
+					</section>
+					<section>
+						<h2>Paths</h2>
+						<ul>
+							<li>A path specifies a unique location in a file system. It points to a
+								location by following the directory tree hierarchy, thus it looks
+								like a slash-separated list of directory names followed by either a
+								directory name or a file name. Eg.: <ul>
+									<li>macOS: <span class="mono"
+											>/Users/<em>username</em>/Desktop</span></li>
+									<li>Linux: <span class="mono"
+											>/home/<em>username</em>/Desktop</span></li>
+									<li>Windows: <span class="mono"
+											>C:\Users\<em>username</em>\Desktop</span></li>
+								</ul></li>
+						</ul>
+					</section>
+					<section>
+						<h2>Path representation (conventions)</h2>
+						<ul>
+							<li>root directory <ul>
+									<li>UNIX: <span class="mono">/</span></li>
+									<li>Windows: <span class="mono">\</span> (relative to current
+										working directory root) or <span class="mono"
+												><em>drive_letter</em>:\</span></li>
+								</ul></li>
+							<li>directory separator <ul>
+									<li>UNIX: <span class="mono">/</span></li>
+									<li>Windows: <span class="mono">\</span></li>
+								</ul></li>
+						</ul>
+					</section>
+					<section>
+						<h2>Path representation (conventions)</h2>
+						<ul>
+							<li>current directory: <span class="mono">.</span></li>
+							<li>parent directory: <span class="mono">..</span></li>
+						</ul>
+					</section>
+					<section>
+						<h2>Types of path</h2>
+						<ul>
+							<li>relative: path in relation to the current location</li>
+							<li>absolute: path in relation to the disk root</li>
+						</ul>
+					</section>
+					<section>
+						<h2>To change folder</h2>
+						<ul>
+							<li>UNIX: <span class="mono">cd <em>directory_name</em></span></li>
+							<li>Windows: <span class="mono">Set-Location
+									<em>directory_name</em></span> or <span class="mono">cd
+										<em>directory_name</em></span> or <span class="mono">chdir
+										<em>directory_name</em></span></li>
+						</ul>
+					</section>
+					<section>
+						<div style="display:flex">
+							<img src="img/index.jpeg" alt="example of folder structure"
+								style="width:55%" />
+							<div style="text-align:left; margin-left:2%">
+								<p>We are in “dossier5”</p>
+								<ul>
+									<li>“my” absolute path: <span class="mono"
+											>/arborescence/dossier1/dossier3/dossier5</span></li>
+									<li>to move to dossier4 (relative path): <span class="mono">cd
+											dossier4</span></li>
+									<li>to move to dossier1 (relative path): <span class="mono">cd
+											../../</span></li>
+									<li>to move to root: <span class="mono">cd /</span></li>
+								</ul>
+							</div></div>
+					</section>
+					<section>
+						<h2>Directories</h2>
+						<p>When we open the terminal, we are at the root of our personal folder</p>
+					</section>
+					<section>
+						<a
+							href="https://commons.wikimedia.org/wiki/File:Linux_File_System_Structure.png"
+							target="_blank">
+							<img src="img/linuxfile.png" alt="Linux file system" />
+						</a>
+					</section>
+					<section>
+						<figure>
+							<img src="img/linuxfile_home.png" alt="Linux file system" />
+						</figure>
+					</section>
+					<section>
+						<figure>
+							<img src="img/windows-list.png" alt="Windows file system" />
+						</figure>
+					</section>
+					<section>
+						<figure>
+							<img src="img/windows-user.png" alt="Windows file system" />
+						</figure>
+					</section>
+					<section>
+						<figure>
+							<img src="img/windows-root-console.png" alt="Windows console" />
+						</figure>
+					</section>
+					<section>
+						<figure>
+							<img src="img/windows-root-console-higlight.png" alt="Windows console"
+							 />
+						</figure>
+					</section>
+					<section>
+						<figure><img src="img/mac-system.jpg" alt="Mac file system" />
+						<figcaption>IMAGE TO BE REPLACED!</figcaption></figure>
+					</section>
+					<section>
+						<h2>List the contents of a directory</h2>
+						<ul>
+							<li>UNIX: <span class="mono">ls</span></li>
+							<li>Windows: <span class="mono">ls</span> or <span class="mono"
+									>dir</span></li>
+						</ul>
+					</section>
+					<section>
+						<h2>Exercise 1</h2>
+						<ol>
+							<li>Open the terminal</li>
+							<li>List all files and directories</li>
+							<li>Go to your desktop</li>
+						</ol>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Modifying the file system</h1>
+					</section>
+					<section>
+						<h2>Create a directory</h2>
+						<ul>
+							<li>UNIX: <span class="mono">mkdir <em>directory_name</em></span></li>
+							<li>Windows: <span class="mono">mkdir <em>directory_name</em></span> or
+									<span class="mono">New-Item <em>directory_name</em></span></li>
+						</ul>
+					</section>
+					<section>
+						<h2>Copy a file</h2>
+						<p><span class="mono">cp <em>file_name_source</em>
+								<em>file_name_output</em></span></p>
+					</section>
+					<section>
+						<h2>Move a file</h2>
+						<p><span class="mono">mv <em>file_name_source</em>
+								<em>file_name_output</em></span></p>
+					</section>
+					<section>
+						<h2>Delete a file</h2>
+						<p><span class="mono">rm <em>file_name</em></span></p>
+					</section>
+					<section>
+						<h2>Delete a directory</h2>
+						<p><span class="mono">rm -r <em>directory_name</em></span></p>
+					</section>
+					<section>
+						<h2>Exercise 2</h2>
+						<ol>
+							<li>Open the terminal and go to the folder where you downloaded the
+								GitHub repo of this course</li>
+							<li>Create the folder “data”</li>
+							<li>Copy or move at least one of the files with which you want to work
+								in this course</li>
+						</ol>
+					</section>
+				</section><section>
+					<section>
+						<h1>Additional materials</h1>
+					</section>
+					<section>
+						<h2>OS: Windows</h2>
+						<ul>
+							<li>Dawson, Ted: “<a
+									href="https://programminghistorian.org/en/lessons/intro-to-powershell"
+									target="_blank">Introduction to the Windows Command Line with
+									PowerShell</a>”. <em>The Programming Historian</em>.</li>
+						</ul>
+					</section>
+					<section>
+						<h2>OS: All</h2>
+						<ul>
+							<li>Milligan, Ian &amp; Baker, James: “<a
+									href="https://programminghistorian.org/en/lessons/intro-to-bash"
+									target="_blank">Introduction to the Bash Command Line</a>”.
+									<em>The Programming Historian</em>.</li>
+						</ul>
+					</section>
 				</section>
 			</div>
 		</div>
-	<script src="js/reveal.js"></script>
-
+		<script src="js/reveal.js"></script>
 		<script>
 			Reveal.initialize({
 				dependencies: [

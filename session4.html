@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<title>The Gothenburg model and CollateX</title>
+
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/reveal.css" />
+		<link rel="stylesheet" href="css/theme/solarized.css" />
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css" />
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>The Gothenburg model and CollateX</h1>
+				</section>
+				<section>
+					<h2>Outline</h2>
+					<ul>
+						<li>The Gothenburg model <ul>
+								<li>History</li>
+								<li>Goals</li>
+								<li>Components </li>
+							</ul>
+						</li>
+						<li>CollateX <ul>
+								<li>What it is CollateX?</li>
+								<li>Collation pipeline in CollateX</li>
+							</ul>
+						</li>
+
+					</ul>
+				</section>
+			<!--	<section><section>
+						<h2>The Gothenburg model: history</h2>
+						<ul>
+							<li>Developers of CollateX and Juxta</li>
+							<li>Joint workshop: Gothenburg 2009</li>
+							<li>Sponsored by <a href="http://www.cost-a32.eu/index.html"
+									target="_blank">COST Action 32</a> and <a
+									href="http://www.interedition.eu/" target="_blank"
+									>Interedition</a></li>
+						</ul>
+					</section>
+					<section>
+						<h2>Goals</h2>
+						<p style="text-align:left">Identification of the core components of textual
+							comparison at an abstract level</p>
+					</section>
+					<section>
+						<h2>Components</h2>
+						<ol>
+							<li>Tokenization</li>
+							<li>Normalization/regularization</li>
+							<li>Alignmemt</li>
+							<li>Analysis</li>
+							<li>Visualization/output</li>
+						</ol>
+					</section>
+					<section>
+						<p>Prerequisite: an electronic text version of each witness</p>
+					</section>
+					<section>
+						<h2>1. Tokenization</h2>
+						<ul>
+							<li>Division the continuous text into units to be aligned (tokens)</li>
+							<li>Any level of granularity <ul>
+									<li>Typically: whitespace-delimited words</li>
+									<li>Other options: syllables, lines, phrases, verses,
+										paragraphs, text nodes...</li>
+								</ul></li>
+						</ul>
+					</section>
+					<section><h2>Tokenization: challenges</h2>
+						<ul>
+							<li>Ambiguity</li>
+							<li>Punctuation</li>
+							<li>Language specific issues: contractions, superscription, etc.</li>
+							<li>Markup</li>
+						</ul></section>
+					<section>
+						<h2>2. Normalization/regularization</h2>
+						<ul>
+							<li>Normalization during transcription <em>vs</em>. collation</li>
+							<li>Ignore non-substantive variation for comparison <ul>
+									<li>Punctuation</li>
+									<li>Upper/lower case</li>
+									<li>Orthographic variation <ul>
+											<li>Allographs</li>
+											<li>Abbreviations</li>
+										</ul></li>
+								</ul></li>
+							<li>Selection of the elements to go into the output</li>
+						</ul>
+					</section>
+					<section>
+						<h2>3. Alignment</h2>
+						<ul>
+							<li>Alignment table</li>
+							<li>Depth vs breadth</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Alignment: challenges</h2>
+						<ul>
+							<li>Repetition</li>
+							<li>Transposition</li>
+							<li>Order effects</li>
+							<li>Computational complexity</li>
+							<li>Exact <em>vs.</em> near (fuzzy) matching</li>
+						</ul>
+					</section>
+					<section>
+						<h2>4. Analysis/feedback</h2>
+						<ul>
+							<li>Intepretation beyond linear alignment</li>
+							<li>Manual intervention?</li>
+						</ul>
+					</section>
+					<section>
+						<h2>5. Visualization/output</h2>
+						<ul>
+							<li>Markup for further processing <ul>
+									<li>XML, TEI, JSON, GraphViz DOT, LaTeX, etc.</li>
+								</ul></li>
+							<li>Textual alignment table <ul>
+									<li>Plain text, HTML, PDF</li>
+								</ul>
+							</li>
+							<li>Textual visualization, for examination and analysis <ul>
+									<li>Juxta?</li>
+								</ul></li>
+							<li> Graphic visualization, for examination and analysis <ul>
+									<li>Variant graph</li>
+								</ul>
+							</li>
+						</ul>
+					</section></section>
+				<section>
+					<section><h2>CollateX</h2>
+						<ol>
+							<li>What it is CollateX?</li>
+							<li>Collation pipeline in CollateX</li>
+						</ol></section>
+					<section>
+						<h2>Flavors</h2>
+						<ul>
+							<li>Java</li>
+							<li>Web app</li>
+							<li>Python</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Advantages of CollateX</h2>
+						<ul>
+							<li>Data formats <ul>
+									<li><strong>Input</strong>: Anything and everything (JSON)</li>
+									<li><strong>Output</strong>: Anything and everything (JSON)</li>
+								</ul></li>
+							<li>Control over each step of the pipeline</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Collation pipeline in CollateX</h2>
+						<ul>
+							<li>Default behaviours</li>
+							<li>Parameters</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Tokenization in CollateX</h2>
+					</section>
+					<section>
+						<h2>Normalization in CollateX</h2>
+					</section>
+					<section>
+						<h2>CollateX alignment parameters</h2>
+					</section>
+					<section>
+						<h2>CollateX outputs</h2>
+					</section>
+				</section>-->
+			</div>
+		</div>
+		<script src="js/reveal.js"></script>
+		<script>
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>

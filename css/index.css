@@ -7,7 +7,12 @@ h1 {
     color:#107dac;
 }
 
+h2 {
+    color: darkred;
+}
+
 img.header {
     width:100%;
     margin:auto;
+    height:100px;
 }

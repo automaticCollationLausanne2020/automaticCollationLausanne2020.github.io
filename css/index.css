@@ -1,0 +1,13 @@
+html, body {
+    margin:5%;
+    font-family:arial, helvetica, sans-serif;
+}
+
+h1 {
+    color:#107dac;
+}
+
+img.header {
+    width:100%;
+    margin:auto;
+}

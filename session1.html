@@ -28,7 +28,13 @@
 			    font-weight: bold}
 			.bigImg {
 			    max-width: 60%;
-			}</style>
+			}
+		.container {
+		display:flex;
+		text-align:left}
+		.container > p {
+		margin-left:4%}
+		</style>
 	</head>
 	<body>
 		<div class="reveal">
@@ -112,9 +118,9 @@
 					<section>
 						<h2>What character encoding?</h2>
 						<h3>UTF-8</h3>
-						<div style="display:flex">
+						<div class="container">
 							<img src="img/warning.png" alt="warning sign" />
-							<p>Your machine might be using another encoding by default (eg.
+							<p>Your machine might be using a different encoding by default (eg.
 								Windows-1252 or CP-1252)</p>
 						</div>
 					</section>
@@ -235,19 +241,20 @@
 						</ul>
 					</section>
 					<section>
-						<div style="display:flex">
+						<div class="container">
 							<img src="img/index.jpeg" alt="example of folder structure"
-								style="max-width:55%;  width: auto;
-								height: auto;" />
+								style="width:55%" />
 							<div style="text-align:left; margin-left:2%">
-								<p>We are in “dossier5”</p>
+								<p>We are in “dossier3”</p>
 								<ul>
 									<li>“my” absolute path: <span class="mono"
-											>/arborescence/dossier1/dossier3/dossier5</span></li>
-									<li>to move to dossier4 (relative path): <span class="mono">cd
-											dossier4</span></li>
+											>/arborescence/dossier1/dossier3</span></li>
+									<li>to move to dossier5 (relative path): <span class="mono">cd
+											dossier5</span></li>
 									<li>to move to dossier1 (relative path): <span class="mono">cd
-											../../</span></li>
+											..</span></li>
+									<li>to move to dossier4 (relative path): <span class="mono">cd
+										../dossier4</span></li>
 									<li>to move to root: <span class="mono">cd /</span></li>
 								</ul>
 							</div></div>

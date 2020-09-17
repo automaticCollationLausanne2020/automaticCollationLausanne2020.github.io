@@ -1,14 +1,28 @@
+/* Array 
+["005FBD","FF9696","3296FA","C40505","003163"]*/
+
+
 html, body {
     margin:5%;
     font-family:arial, helvetica, sans-serif;
 }
 
 h1 {
-    color:#107dac;
+    color: #005FBD;
 }
 
 h2 {
-    color: darkred;
+    color: #C40505;
+}
+
+h3 {
+
+color: #003163
+    
+}
+
+a {
+    color:  #3296FA;
 }
 
 img.header {

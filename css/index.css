@@ -16,3 +16,7 @@ img.header {
     margin:auto;
     height:100px;
 }
+
+li > span {
+    font-weight: bold;
+}

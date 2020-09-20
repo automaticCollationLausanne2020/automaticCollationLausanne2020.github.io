@@ -1,0 +1,92 @@
+<svg width="952pt" height="172pt" viewBox="0.00 0.00 952.00 172.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<g id="VariantGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 168)">
+								<title>G</title>
+								<polygon fill="white" stroke="white" points="-4,5 -4,-168 949,-168 949,5 -4,5"></polygon>
+								<!-- v0 -->
+								<g id="node1" class="node"><title>v0</title>
+									<ellipse fill="none" stroke="black" cx="27" cy="-64" rx="27" ry="18"></ellipse>
+								</g>
+								<!-- v1 -->
+								<g id="node2" class="node"><title>v1</title>
+									<ellipse fill="none" stroke="black" cx="182" cy="-145" rx="68.7979" ry="19.0919"></ellipse>
+									<text text-anchor="middle" x="182" y="-141.9" font-family="Times Roman,serif" font-size="14.00">En savoir plus </text>
+								</g>
+								<!-- v0&#45;&gt;v1 -->
+								<g id="edge2" class="edge"><title>v0-&gt;v1</title>
+									<path fill="none" stroke="black" d="M44.4762,-77.8834C52.6194,-84.0707 62.574,-91.2442 72,-97 90.2553,-108.147 111.558,-118.073 130.529,-125.964"></path>
+									<polygon fill="black" stroke="black" points="129.337,-129.258 139.918,-129.786 131.975,-122.774 129.337,-129.258"></polygon>
+									<text text-anchor="middle" x="83" y="-114.4" font-family="Times Roman,serif" font-size="14.00">W3</text>
+								</g>
+								<!-- v2 -->
+								<g id="node3" class="node"><title>v2</title>
+									<ellipse fill="none" stroke="black" cx="182" cy="-89" rx="36.977" ry="19.0919"></ellipse>
+									<text text-anchor="middle" x="182" y="-85.9" font-family="Times Roman,serif" font-size="14.00">Cours </text>
+								</g>
+								<!-- v0&#45;&gt;v2 -->
+								<g id="edge4" class="edge"><title>v0-&gt;v2</title>
+									<path fill="none" stroke="black" d="M53.2936,-68.2409C75.9634,-71.8973 109.214,-77.2603 136.239,-81.6193"></path>
+									<polygon fill="black" stroke="black" points="135.828,-85.098 146.257,-83.2351 136.942,-78.1873 135.828,-85.098"></polygon>
+									<text text-anchor="middle" x="83" y="-80.4" font-family="Times Roman,serif" font-size="14.00">W2</text>
+								</g>
+								<!-- v3 -->
+								<g id="node4" class="node"><title>v3</title>
+									<ellipse fill="none" stroke="black" cx="339" cy="-44" rx="68.0887" ry="19.0919"></ellipse>
+									<text text-anchor="middle" x="339" y="-40.9" font-family="Times Roman,serif" font-size="14.00">Introduction à </text>
+								</g>
+								<!-- v0&#45;&gt;v3 -->
+								<g id="edge6" class="edge"><title>v0-&gt;v3</title>
+									<path fill="none" stroke="black" d="M49.9611,-54.2116C56.9137,-51.694 64.6558,-49.3235 72,-48 135.543,-36.5488 208.972,-36.3735 262.724,-38.5943"></path>
+									<polygon fill="black" stroke="black" points="262.716,-42.0974 272.863,-39.0512 263.031,-35.1045 262.716,-42.0974"></polygon>
+									<text text-anchor="middle" x="83" y="-54.4" font-family="Times Roman,serif" font-size="14.00">W1</text>
+								</g>
+								<!-- v6 -->
+								<g id="node7" class="node"><title>v6</title>
+									<ellipse fill="none" stroke="black" cx="917" cy="-20" rx="27" ry="18"></ellipse>
+								</g>
+								<!-- v0&#45;&gt;v6 -->
+								<g id="edge18" class="edge"><title>v0-&gt;v6</title>
+									<path fill="none" stroke="white" d="M45.5475,-50.7392C73.6404,-31.9932 129.305,-7.10543e-15 182,-0 182,-0 182,-0 672,-0 745.995,-7.10543e-15 832.145,-9.17449 880.042,-15.0958"></path>
+									<polygon fill="white" stroke="white" points="879.872,-18.602 890.231,-16.3782 880.746,-11.6568 879.872,-18.602"></polygon>
+								</g>
+								<!-- v4 -->
+								<g id="node5" class="node"><title>v4</title>
+									<ellipse fill="none" stroke="black" cx="453" cy="-102" rx="27" ry="19.0919"></ellipse>
+									<text text-anchor="middle" x="453" y="-98.9" font-family="Times Roman,serif" font-size="14.00">sur </text>
+								</g>
+								<!-- v1&#45;&gt;v4 -->
+								<g id="edge8" class="edge"><title>v1-&gt;v4</title>
+									<path fill="none" stroke="black" d="M250.51,-141.523C295.724,-138.155 355.991,-131.61 408,-119 412.109,-118.004 416.352,-116.737 420.517,-115.345"></path>
+									<polygon fill="black" stroke="black" points="421.763,-118.616 429.989,-111.94 419.394,-112.029 421.763,-118.616"></polygon>
+									<text text-anchor="middle" x="339" y="-145.4" font-family="Times Roman,serif" font-size="14.00">W3</text>
+								</g>
+								<!-- v2&#45;&gt;v4 -->
+								<g id="edge10" class="edge"><title>v2-&gt;v4</title>
+									<path fill="none" stroke="black" d="M219.397,-90.7939C271.152,-93.2767 364.065,-97.7337 415.745,-100.213"></path>
+									<polygon fill="black" stroke="black" points="415.656,-103.713 425.812,-100.696 415.992,-96.7206 415.656,-103.713"></polygon>
+									<text text-anchor="middle" x="339" y="-105.4" font-family="Times Roman,serif" font-size="14.00">W2</text>
+								</g>
+								<!-- v5 -->
+								<g id="node6" class="node"><title>v5</title>
+									<ellipse fill="none" stroke="black" cx="672" cy="-47" rx="104.86" ry="19.0919"></ellipse>
+									<text text-anchor="middle" x="672" y="-43.9" font-family="Times Roman,serif" font-size="14.00">la collation automatique</text>
+								</g>
+								<!-- v3&#45;&gt;v5 -->
+								<g id="edge12" class="edge"><title>v3-&gt;v5</title>
+									<path fill="none" stroke="black" d="M407.594,-44.618C450.432,-45.0039 506.681,-45.5106 556.282,-45.9575"></path>
+									<polygon fill="black" stroke="black" points="556.401,-49.4586 566.432,-46.0489 556.464,-42.4589 556.401,-49.4586"></polygon>
+									<text text-anchor="middle" x="453" y="-51.4" font-family="Times Roman,serif" font-size="14.00">W1</text>
+								</g>
+								<!-- v4&#45;&gt;v5 -->
+								<g id="edge14" class="edge"><title>v4-&gt;v5</title>
+									<path fill="none" stroke="black" d="M478.551,-95.5832C508.217,-88.1328 558.427,-75.5228 600.26,-65.0169"></path>
+									<polygon fill="black" stroke="black" points="601.298,-68.365 610.144,-62.5345 599.593,-61.5758 601.298,-68.365"></polygon>
+									<text text-anchor="middle" x="523" y="-96.4" font-family="Times Roman,serif" font-size="14.00">W2, W3</text>
+								</g>
+								<!-- v5&#45;&gt;v6 -->
+								<g id="edge16" class="edge"><title>v5-&gt;v6</title>
+									<path fill="none" stroke="black" d="M762.185,-37.0612C803.005,-32.5627 848.981,-27.4959 880.15,-24.061"></path>
+									<polygon fill="black" stroke="black" points="880.567,-27.5363 890.123,-22.9619 879.8,-20.5785 880.567,-27.5363"></polygon>
+									<text text-anchor="middle" x="834" y="-38.4" font-family="Times Roman,serif" font-size="14.00">W1, W2, W3</text>
+								</g>
+							</g>
+						</svg>

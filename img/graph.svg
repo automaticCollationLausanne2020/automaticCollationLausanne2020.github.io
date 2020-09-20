@@ -1,0 +1,64 @@
+<svg width="668pt" height="128pt" viewBox="0.00 0.00 668.00 128.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="VariantGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 124)">
+<title>G</title>
+<polygon fill="white" stroke="white" points="-4,5 -4,-124 665,-124 665,5 -4,5"></polygon>
+<!-- v0 -->
+<g id="node1" class="node"><title>v0</title>
+<ellipse fill="none" stroke="black" cx="27" cy="-45" rx="27" ry="18"></ellipse>
+</g>
+<!-- v1 -->
+<g id="node2" class="node"><title>v1</title>
+<ellipse fill="none" stroke="black" cx="181" cy="-101" rx="68.0887" ry="19.0919"></ellipse>
+<text text-anchor="middle" x="181" y="-97.9" font-family="Times Roman,serif" font-size="14.00" fill="maroon">Introduction à </text>
+</g>
+<!-- v0&#45;&gt;v1 -->
+<g id="edge2" class="edge"><title>v0-&gt;v1</title>
+<path fill="none" stroke="black" d="M47.6999,-56.5584C55.2162,-60.4921 63.8627,-64.7192 72,-68 87.6414,-74.3062 104.96,-80.0736 121.103,-84.9611"></path>
+<polygon fill="black" stroke="black" points="120.394,-88.4014 130.976,-87.8876 122.383,-81.69 120.394,-88.4014"></polygon>
+<text text-anchor="middle" x="83" y="-81.4" font-family="Times Roman,serif" font-size="14.00">T1</text>
+</g>
+<!-- v2 -->
+<g id="node3" class="node"><title>v2</title>
+<ellipse fill="none" stroke="black" cx="181" cy="-45" rx="51.1176" ry="19.0919"></ellipse>
+<text text-anchor="middle" x="181" y="-41.9" font-family="Times Roman,serif" font-size="14.00" fill="maroon">Cours sur </text>
+</g>
+<!-- v0&#45;&gt;v2 -->
+<g id="edge4" class="edge"><title>v0-&gt;v2</title>
+<path fill="none" stroke="black" d="M54.1776,-45C72.1489,-45 96.4655,-45 118.999,-45"></path>
+<polygon fill="black" stroke="black" points="119.198,-48.5001 129.198,-45 119.198,-41.5001 119.198,-48.5001"></polygon>
+<text text-anchor="middle" x="83" y="-51.4" font-family="Times Roman,serif" font-size="14.00">T2</text>
+</g>
+<!-- v4 -->
+<g id="node5" class="node"><title>v4</title>
+<ellipse fill="none" stroke="black" cx="633" cy="-18" rx="27" ry="18"></ellipse>
+</g>
+<!-- v0&#45;&gt;v4 -->
+<g id="edge12" class="edge"><title>v0-&gt;v4</title>
+<path fill="none" stroke="white" d="M49.9528,-35.2268C66.7808,-28.6125 90.3696,-20.4709 112,-17 291.043,11.7301 338.668,-16.1977 520,-17 545.121,-17.1112 573.383,-17.3613 595.358,-17.5836"></path>
+<polygon fill="white" stroke="white" points="595.564,-21.0858 605.6,-17.6897 595.637,-14.0862 595.564,-21.0858"></polygon>
+</g>
+<!-- v3 -->
+<g id="node4" class="node"><title>v3</title>
+<ellipse fill="none" stroke="black" cx="414" cy="-45" rx="104.86" ry="19.0919"></ellipse>
+<text text-anchor="middle" x="414" y="-41.9" font-family="Times Roman,serif" font-size="14.00" fill="darkgreen" font-weight="600">la collation automatique</text>
+</g>
+<!-- v1&#45;&gt;v3 -->
+<g id="edge6" class="edge"><title>v1-&gt;v3</title>
+<path fill="none" stroke="black" d="M233,-88.5022C264.616,-80.9034 305.488,-71.0802 340.39,-62.6917"></path>
+<polygon fill="black" stroke="black" points="341.632,-65.993 350.537,-60.253 339.996,-59.1868 341.632,-65.993"></polygon>
+<text text-anchor="middle" x="279" y="-85.4" font-family="Times Roman,serif" font-size="14.00">T1</text>
+</g>
+<!-- v2&#45;&gt;v3 -->
+<g id="edge8" class="edge"><title>v2-&gt;v3</title>
+<path fill="none" stroke="black" d="M232.71,-45C252.214,-45 275.269,-45 298.284,-45"></path>
+<polygon fill="black" stroke="black" points="298.487,-48.5001 308.487,-45 298.487,-41.5001 298.487,-48.5001"></polygon>
+<text text-anchor="middle" x="279" y="-51.4" font-family="Times Roman,serif" font-size="14.00">T2</text>
+</g>
+<!-- v3&#45;&gt;v4 -->
+<g id="edge10" class="edge"><title>v3-&gt;v4</title>
+<path fill="none" stroke="black" d="M501.184,-34.2513C534.312,-30.167 570.287,-25.7317 596.272,-22.5281"></path>
+<polygon fill="black" stroke="black" points="596.913,-25.9757 606.41,-21.2783 596.056,-19.0283 596.913,-25.9757"></polygon>
+<text text-anchor="middle" x="563" y="-35.4" font-family="Times Roman,serif" font-size="14.00">T1, T2</text>
+</g>
+</g>
+</svg>

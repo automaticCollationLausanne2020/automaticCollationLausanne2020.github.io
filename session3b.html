@@ -29,11 +29,11 @@
 			}
 			.smaller {
 				font-size: 0.6em;
-				line-height: 0.6em
+				display: block;
 			}
 			.caption {
 				font-size: 0.8em;
-				line-height: 0.8em
+				display: block;
 			}
 
 		</style>
@@ -49,11 +49,21 @@
 
 				<section>
 					<ol>
-						<li>Concepts</li>
-						<li>History</li>
-						<li>Practices</li>
-						<li>Automatic collation</li>
-						<li>Pros and cons of automatic collation</li>
+						<li>Manual collation
+							<ul>
+								<li>Concepts</li>
+								<li>History</li>
+								<li>Practices</li>
+							</ul>
+						</li>
+						<li>Automatic collation
+							<ul>
+								<li>Concepts</li>
+								<li>History</li>
+								<li>Practices</li>
+							</ul>
+						</li>
+						<li>Pro and cons of automatic collation</li>
 					</ol>
 				</section>
 
@@ -66,7 +76,8 @@
  -->
 
  				<section style="color:black" data-background-color="white">
- 					<h2>1. Concepts</h2>
+ 					<h3>1. Manual collation</h3>
+ 					<h2>Concepts</h2>
  				</section>
 
 				
@@ -132,7 +143,8 @@
  -->
 
  				<section style="color:black" data-background-color="white">
- 					<h2>2. History</h2>
+ 					<h3>1. Manual collation</h3>
+ 					<h2>History</h2>
  				</section>
 				
 
@@ -225,7 +237,8 @@
 
 
 				<section style="color:black" data-background-color="white">
- 					<h2>3. Practices</h2>
+ 					<h3>1. Manual collation</h3>
+ 					<h2>Practices</h2>
  				</section>
 
 				<section>
@@ -243,7 +256,7 @@
 				<section>
 					<p>tiring, error-prone, difficult to record all data</p>
 					<p>"[Collation is], for most collators, stupendously and nauseatingly dull" (Petty and Gibson 1970)</p>
-    				                         
+    				<p>"The one universal effect of this kind of work is the inducement to sleep" (Shillingsburg 1978)</p>
 				</section>
 
 
@@ -256,7 +269,8 @@
  -->	
 
  				<section style="color:black" data-background-color="white">
- 					<h2>4. Automatic collation</h2>
+ 					<h3>2. Automatic collation</h3>
+ 					<h2>Concepts</h2>
  				</section>
 
  				<section> 
@@ -266,6 +280,13 @@
 					<br/>semi-automatic
 					<br/><br/>COLLATION
 				</section>
+
+				<section style="color:black" data-background-color="white">
+ 					<h3>2. Automatic collation</h3>
+ 					<h2>History</h2>
+ 					<br/><br/><br/><br/>
+ 					<div class="smaller">Nury, E. & Spadini, E. 2020. "From giant despair to a new heaven: the early years of automatic collation". <em>Information Technology</em>, 62 (2), 61-74.</div>
+ 				</section>
 
  				 <section>
  					<a title="Folger Shakespeare Library, Washington, DC (Julie Ainsworth, photographer) [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Hinman_collator.jpg"><img width="512" alt="Hinman collator" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Hinman_collator.jpg/512px-Hinman_collator.jpg"></a>
@@ -298,19 +319,51 @@
 				<section>
 					<img width="50%" src="img/session3b/collate.jpg"/>
 					<br/>Collate
+
 					<div class="smaller">Robinson, P. M. W. 1989. “The Collation and Textual Criticism of Icelandic <br/>Manuscripts (1): Collation.” <i>Literary and Linguistic Computing</i> 4 (2): 99–105.</div>
-					<br/>
-					<div class="smaller">1991, annunciato nella lista di diffusione <i>Humanist</i>
-						<br/>(<a href="https://dhhumanist.org/Archives/Virginia/v04/1240.html" target="_blank">dhhumanist.org/Archives/Virginia/v04/1240.html</a>)</div>
+					<div class="smaller">Robinson, P. M. W. 1989. “Rationale and Implementation of the Collation System.” <i>The Miller’s Tale on CD-ROM. The Canterbury Tales Project</i>ed. by Peter Robinson, Leicester 2004.</div>
+					<div class="smaller">Robinson, <em>Scholarly Digital Editions: The history of Collate</em>, <a href="http://scholarlydigitaleditions.blogspot.com/2014/09/the-history-of-collate.html">http://scholarlydigitaleditions.blogspot.com/2014/09/the-history-of-collate.html</a></div>
 				</section>
 
 				<section>
-					Robinson collate is the first to use bio-informatics
+					<h4>Towards parallel segmentation</h4>
+					<div style="font-size: 0.5em">
+						<div><b>Chaucher, <em>Miller's tale</em>, v. 35</b></div>
+						<ul style="list-style: none">
+							<li>This Carpenter hadde wedded newe a wyf</li>
+							<li>This Carpenter hadde wedded a newe wyf</li>
+							<li>This Carpenter hadde newe wedded a wyf</li>
+							<li>This Carpenter hadde wedded newly a wyf</li>
+							<li>This Carpenter hadde E wedded newe a wyf</li>
+							<li>This Carpenter hadde newli wedded a wyf</li>
+							<li>This Carpenter hadde wedded a wyf</li>
+						</ul>
+					</div>
+					<hr/>
+					<div style="font-size: 0.6em">
+						<div><b>Results of Collate (first version)</b></div>
+						<ul style="list-style: none">
+							<li><em>wedded</em>] 53 witnesses; <em>E wedded</em> 1 witness</li>
+							<li><em>wedded newe</em>] <em>newe wedded</em> 1 witness, <em>newli wedded</em> 1 witness</li>
+							<li><em>newe</em>] 26 witnesses; <em>newly</em> 1 witness; om. 1 witness</li>
+							<li><em>newe a</em>] <em>a newe</em> 23 witnesses</li>
+							<li><em>a</em>] 30 witnesses</li>
+						</ul>
+					</div>
+					<hr/>
+					<div style="font-size: 0.6em">
+						<div><b>Results of Collate (second version)</b></div>
+						<em>wedded newe a</em>] <em>wedded newe a</em> 25 witnesses; <em>wedded a newe</em> 23 witnesses; <em>newe wedded a</em> 1 witness; <em>E wedded newe a</em> 1 witness; <em>wedded newly a</em> 2 witnesses; <em>newli wedded a</em> 1 witness; <em>wedded a</em> 1 witness
+					</div>
+				</section>
+
+				<section>
 					<img src="img/session3b/sequence-alignment.png"/>
 				</section>
 
 				<section>
-					ADD Colwell graph
+					<img style="background-color: white" width="130%" src="img/session3b/colwellTune-earlyVarGraph.jpg">
+					<br><span class="smaller">Colwell, E. and Tune, E. 1964. "Variant readings:classifcation and use". <em> Journal of Biblical Literature</em>, 83 (3), 253–261.</span>
 				</section>
 
 				<section>
@@ -320,29 +373,48 @@
 				    Schmidt, D., 2009. "Merging Multi-Version Texts: a Generic Solution to the Overlap Problem". In Proceedings of <em>Balisage: The Markup Conference 2009</em>. Balisage Series on Markup Technologies, vol. 3 (2009).</span>
 				</section>
 
-				
-
-				<section>From our article, section 4: Humans and machines, and from Conclusions</section>
-
-				
 				<section style="color:black" data-background-color="white">
- 					<h2>4. Pro and cons of automatic collation</h2>
+ 					<h3>2. Automatic collation</h3>
+ 					<h2>Practices</h2>
+ 				</section>
+				
+				<section>
+					<h3>Humanists and Developers</h3>
+					<div class="caption">
+					<div>"one of the most trying difficulties of our first attempt had been the uncertainty of our communication with the programmers. Mr. Petty proposed that a second effort be made in which he would be the programmer. We would thus be certain that decisions taken by us as textual scholars would not be circumvented when they were translated into machine code" Petty and Gibson 1970</div>
+<br/>
+					<div>"Before I learned Fortran a student introduced me to a professional programmer in the aircraft industry, Ronald Bland [...]. He did the programming in his spare time over a couple of months and charged it to experience." Dearing 1970</div> </div>					
  				</section>
 
+ 				<section>
+					<h3>Humans and Machines</h3>
+					<div class="caption">
+					<div>"a close fexible relationship between the editor and the computer where the frst does what he is good at (perceiving and evaluating the signifcance of complex differences and making judgments), the second does what it was designed for (speedy manipulation of large quantifes of data, retention and accurate copying of data sets, creation and updating of extensive records) and the functions of each complement the other" Cannon and Oakman 1989</div>
+					<br/>
+					<div>"in performing these mechanical tasks, the computer never slips up nor grows weary" Stringer and Vilberg 1987</div> 
+<br/>
+					<div>"the unconscious fear of the supposed ties of formalism", Maretti and Zarri 1967</div></div>
+ 				</section>
+				
+				<section style="color:black" data-background-color="white">
+ 					<h2>3. Pro and cons of automatic collation</h2>
+ 				</section>
 
-				<section style="text-align: left">
-					<h4>Pros</h4>
+ 				<section style="text-align: left">
+ 					<div class="caption">
+					<h3>Pros</h3>
 					<ul>
-						<li>Consistency in the comparison</li>
-						<li>Share and reuse the collation data and results (data-driven philology)</li>
+						<li>Consistency in the comparison (cf. e.g. "define the concept of collation in data processing terms", Petty and Gibson 1970</li>
+						<li>Share and reuse the data and results (cf. e.g. data-driven philology, Camps 2018)</li>
 						<li>Replicability with new settings (e.g., add new manuscripts to the collation or change the normalization strategy)</li>
 					</ul>
 
-
-					<h4>Cons</h4>
+<br/><br/>
+					<h3>Cons</h3>
 					<ul>
 						<li>Need for transcribed materials</li>
 					</ul>
+				</div>
 				</section>
 
 				<section>Questions?</section>
